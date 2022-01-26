@@ -1,4 +1,4 @@
-print("[INFO] import...")
+print("[INFO] SETUP...")
 
 from tensorflow.keras.layers import Dense ,Flatten,AveragePooling2D,Conv2D
 from tensorflow.keras.preprocessing.image import img_to_array,load_img
@@ -21,7 +21,7 @@ print("[INFO] loading data...")
 data=[]
 labels=[]
 
-#Loading Data....
+#Data Collection....
 for category in CATEGORIES:
     path=os.path.join(DATADIR,category)
     for img in os.listdir(path):
