@@ -69,7 +69,7 @@ cnn.fit(x_train,y_train,epochs=2)
 
 #Predictions...
 print("[INFO] predictions..")
-predictions=cnn3.predict(x_test)
+predictions=cnn.predict(x_test)
 
 #Affichage de Quelques Predictions.. 
 print(predictions[:10])
